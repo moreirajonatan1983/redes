@@ -1,3 +1,4 @@
-git/chat/target/
 /chat/chat.iml
 /.idea
+
+/chat/target/
