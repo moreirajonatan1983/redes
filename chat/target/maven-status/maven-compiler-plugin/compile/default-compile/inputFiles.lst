@@ -1,0 +1,17 @@
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/util/ChatUtil.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/swing/ChatConsoleLogEmulator.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/swing/ServerEmulator.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/swing/ChatUDP.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/swing/Chat.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/swing/ChatEmulator.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/connection/Connection.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/tcp/TCPClient.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/swing/Server.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/udp/UDPClient.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/tcp/TCPServer.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/connection/impl/ConnectionTCPClient.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/udp/UDPServer.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/connection/impl/ConnectionTCPServer.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/connection/impl/ConnectionUDP.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/main/Chat.java
+/home/jony/developers/ws/w-redes/chat/src/main/java/org/utnfrd/chat/main/MainConnection.java
