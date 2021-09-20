@@ -1,21 +1,17 @@
 package org.utnfrd.chat.swing;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.ButtonGroup;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JRadioButton;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
+import javax.swing.*;
+import javax.swing.border.Border;
+
 
 import org.utnfrd.chat.connection.Connection;
 import org.utnfrd.chat.connection.impl.ConnectionTCPClient;
 import org.utnfrd.chat.connection.impl.ConnectionUDP;
-
+import org.utnfrd.model.Protocol;
 
 
 /**
@@ -98,7 +94,7 @@ public class ChatEmulator extends JFrame implements ActionListener {
 	private void configurarVentana() {
 		
 		this.setTitle("Chat-Emulator");
-		this.setSize(310, 560);
+		this.setSize(710, 560);
 		this.setLocationRelativeTo(null);
 		this.setLayout(null);
 		this.setResizable(false);
@@ -108,8 +104,8 @@ public class ChatEmulator extends JFrame implements ActionListener {
 	private void inicializarComponentes() {
 		
 		labelProtocolType = new JLabel();		
-		jRadioButtonTCP.setText("TCP");
-		jRadioButtonUDP.setText("UDP");
+		jRadioButtonTCP.setText(Protocol.TCP.name());
+		jRadioButtonUDP.setText(Protocol.UDP.name());
 		
 		labelProtocolType.setBounds(20, 15, 110, 25);
 		jRadioButtonTCP.setBounds(140,15,80,25);    
@@ -238,7 +234,55 @@ public class ChatEmulator extends JFrame implements ActionListener {
 		buttonSend.addActionListener(sendActionListener());
 		
 		this.add(buttonSend);
-		
+
+		// ----------------------------------------
+
+//		UserTableModel model = new UserTableModel();
+//
+//		Object[][] data = {
+//				{"TCP", "Contacto"},
+//				{"UDP", "Contacto"},
+//		};
+//
+//		JTable contacts = new JTable();
+//		contacts.setModel(model);
+//
+//		// JList contacts = new JList(model);
+//		contacts.setBounds(350,80, 350,300);
+//		contacts.setEnabled(true);
+//		contacts.setVisible(true);
+//		contacts.setAutoscrolls(true);
+//		contacts.setFont(contacts.getFont().deriveFont(14.0f));
+//
+//		contacts.setEditingColumn(0);
+//
+
+//		TestFrame testFrame = new TestFrame();
+//		testFrame.setBounds(320,110,350,400);
+//		this.add(testFrame);
+
+//		JScrollPane scrollPane = new JScrollPane();
+//		scrollPane.setBounds(320,110,350,400);
+//		scrollPane.setEnabled(true);
+//		scrollPane.setVisible(true);
+		// scrollPane.setViewportView(contacts);
+
+		TestJPanel jPanel = new TestJPanel();
+		jPanel.setBounds(320,10,450,440);
+		jPanel.setEnabled(true);
+		jPanel.setVisible(true);
+		jPanel.setBackground(Color.RED);
+
+
+		//jPanel.add(buttonSend);
+
+
+		this.add(jPanel);
+
+//		https://www.codejava.net/java-se/swing/setting-column-width-and-row-height-for-jtable
+
+        //setPreferredWidth
+
 	}
 
 	private ActionListener selectedTCPActionListener() {
