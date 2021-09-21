@@ -78,7 +78,7 @@ public class MainConnection extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 			
-				ChatEmulator chatClient = new ChatEmulator("127.0.0.1" , 6789, "127.0.0.1" , 6789, "Jonatan", "Ana");
+				ChatEmulator chatClient = new ChatEmulator(ChatConstant.tcpFromIP , ChatConstant.tcpFromPort, ChatConstant.tcpToIP , ChatConstant.tcpToPort, "Jonatan", "Ana");
 				
 				chatClient.setLocation(750, 250);
 				

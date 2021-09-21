@@ -1,5 +1,7 @@
 package org.utnfrd.tcp;
 
+import org.utnfrd.chat.main.ChatConstant;
+
 import java.io.*;
 
 import java.net.*;
@@ -22,7 +24,7 @@ public class TCPClient {
 
 			BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
 
-			Socket clientSocket = new Socket("127.0.0.1", 6789);
+			Socket clientSocket = new Socket(ChatConstant.tcpFromIP, ChatConstant.tcpFromPort);
 
 			DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
 

@@ -12,6 +12,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import org.utnfrd.chat.connection.impl.ConnectionTCPServer;
+import org.utnfrd.chat.main.ChatConstant;
 
 public class ServerEmulator extends JFrame {
 
@@ -74,7 +75,7 @@ public class ServerEmulator extends JFrame {
 				
 		portJTextField = new JTextField();
 		portJTextField.setBounds(430, 20, 70, 30);
-		portJTextField.setText("6789");
+		portJTextField.setText(ChatConstant.tcpToPort.toString());
 		this.add(portJTextField);
 				
 		JLabel serverConsoleLogLabel = new JLabel();

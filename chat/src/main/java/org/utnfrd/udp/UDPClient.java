@@ -1,5 +1,7 @@
 package org.utnfrd.udp;
 
+import org.utnfrd.chat.main.ChatConstant;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.DatagramPacket;
@@ -16,7 +18,7 @@ public class UDPClient {
 
 		DatagramSocket clientSocket = new DatagramSocket();
 
-		InetAddress IPAddress = InetAddress.getByName("127.0.0.1");
+		InetAddress IPAddress = InetAddress.getByName(ChatConstant.tcpFromIP);
 
 		byte[] sendData = new byte[1024];
 

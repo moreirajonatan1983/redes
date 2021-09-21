@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 import org.utnfrd.chat.connection.Connection;
 import org.utnfrd.chat.connection.impl.ConnectionTCPServer;
+import org.utnfrd.chat.main.ChatConstant;
 
 public class Server {
 
@@ -22,7 +23,7 @@ public class Server {
 			
 			if("start".equalsIgnoreCase(sentence)) {
 				
-				connection.initSession(SERVER_PORT);								
+				connection.initSession(ChatConstant.tcpToPort);
 				
 				Thread.sleep(500);	
 				

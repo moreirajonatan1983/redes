@@ -21,13 +21,13 @@ public class ConnectionTCPClient implements Connection {
 		String ipPort="";
 		try {					
 			
-			clientSocket = new Socket("127.0.0.1", toPort);			
+			clientSocket = new Socket(toIP, toPort);
 			
 			sendMessage(userName);
 					
 			ipPort = String.valueOf(clientSocket.getLocalSocketAddress()).substring(1);
 			
-			ChatConsoleLogEmulator.getInstance().log("Cliente iniciado. Server: 127.0.0.1:" + toPort + ". Client: " + ipPort);
+			ChatConsoleLogEmulator.getInstance().log("Cliente iniciado. Server:" + toIP +  ":" + toPort + ". Client: " + ipPort);
 			
 		} catch (IOException e) {
 							

@@ -14,7 +14,7 @@ public class Chat {
 	
 	public static void main(String[] args) {
 
-		ChatEmulator chatClient0 = new ChatEmulator("127.0.0.1" , 6789, "127.0.0.1" , 6789, "Jonatan", "Ana");
+		ChatEmulator chatClient0 = new ChatEmulator(ChatConstant.tcpFromIP , ChatConstant.tcpFromPort, ChatConstant.tcpToIP , ChatConstant.tcpToPort, "Jonatan", "Ana");
 		chatClient0.setVisible(true);		
 
 //		ChatEmulator chatClient00 = new ChatEmulator("127.0.0.1" , 6789, "127.0.0.1" , 6789, "Ana", "Jonatan");

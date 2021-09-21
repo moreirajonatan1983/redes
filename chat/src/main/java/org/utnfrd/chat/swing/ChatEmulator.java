@@ -251,8 +251,8 @@ public class ChatEmulator extends JFrame implements ActionListener {
 				connection = new ConnectionTCPClient();
 				
 				fromIpPortJTextField.setText("");
-				toIpPortJTextField.setText("127.0.0.1:6789");				
-				
+				toIpPortJTextField.setText("redes2021.ddns.net:6789");
+
 				toLabel.setVisible(true);
 				toNameTextField.setVisible(true);
 				
